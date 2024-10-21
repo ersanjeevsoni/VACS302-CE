@@ -34,7 +34,10 @@ Git hub
 14/10/24
 CSS- background, box-sizing, font and text properties
 21/10/24
-CSS-Cursor, Scrollbar(ovrflow),Selectors (simple, combinators, psudo elements and class)
+CSS-Cursor, Scrollbar(ovrflow),Selectors (simple, combinators, psudo elements and class); opacity
+22/10/24
+iframe, progressbar, audio , video,
+
 
 
 
