@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position | Transform | Animate | Transition</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 400px;
+            height: 1000px;
+            background-color: antiquewhite;
+            z-index: 0;
+            position: relative;
+            top: 160px;
+        }
+
+        main div {
+            border: 2px solid #999;
+            width: 200px;
+            height: 100px;
+        }
+
+        .c1 {
+            background-color: #bb1a1a;
+            position: relative;
+            top: 20px;
+            z-index: 1;
+        }
+
+        .c2 {
+            background-color: aliceblue;
+            position: absolute;
+            top: 0px;
+            left: 30px;
+            z-index: 0;
+        }
+
+        aside {
+            width: 300px;
+            height: 200vh;
+            background-color: rgb(44, 39, 33);
+            margin-top: 200px;
+
+        }
+
+        .c3 {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            position: sticky;
+            top: 190px;
+        }
+
+        nav {
+            width: 100%;
+            height: 150px;
+            background-color: aqua;
+            position: fixed;
+            z-index: 1;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+
+        .ball{
+    height: 50px; width: 50px; border-radius: 50%;
+    background-color: #a72e2e;
+    animation-name: circulation;
+    animation-duration:4s;
+    position: absolute;
+    animation-delay:2ms ;
+  
+
+}
+@keyframes circulation{
+    from{
+        transform: translate(0px, 0px);
+        scale: .5;
+    }
+    to{
+        transform: translate(100px, 100px);
+        scale: 1.4;
+    }
+
+}
+.box{
+    width: 100px; height: 100px; background-color: #999;
+}
+.box:hover{ transform:rotate(30deg); transition-duration: 2s;}
+    </style>
+</head>
+
+<body>
+    <!-- <nav>
+        <h2>Nav Bar</h2>
+
+    </nav> -->
+    <!-- <main>
+        <div class="c1">C1</div>
+        <div class="c2">C2</div>  
+    </main> -->
+    <!-- <div class="c3"></div>
+    <aside>
+        
+    </aside>
+    <footer>
+        <h2>Footer</h2>
+    </footer> -->
+
+    <!--css animation-->
+    <div class="ball">
+
+    </div>
+    <div class="box"></div>
+
+</body>
+
+</html>

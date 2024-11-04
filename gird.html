@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid | HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 300px 150px;
+            gap: 5px;
+
+        }
+
+        nav {
+            background-color: antiquewhite; align-content: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-content: space-between;
+            gap: 5px;
+
+        }
+
+        main aside {
+            background-color: antiquewhite; align-content: center;
+        }
+
+        main article {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+
+        main article div {
+            background-color: rgb(230, 211, 185);
+            align-content: center;
+        }
+
+        footer {
+            background-color: antiquewhite; align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main"><!--main start-->
+        <nav>
+            <h1>Hello World!</h1>
+        </nav>
+
+        <main>
+            <aside>
+                <h2>Aside</h2>
+            </aside>
+            <article>
+                <div>box1</div>
+                <div>box2</div>
+                <div>box3</div>
+                <div>box4</div>
+            </article>
+        </main>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div><!--main end-->
+</body>
+
+</html>
