@@ -37,13 +37,14 @@ CSS- background, box-sizing, font and text properties
 CSS-Cursor, Scrollbar(ovrflow),Selectors (simple, combinators, psudo elements and class); opacity
 22/10/24
 iframe, progressbar, audio , video,
-
 04/11/24
 CSS Layout-flex
 05/11/24
 CSS Layout-flex
 11/11/24
 CSS Layout-Grid
+12/11/23
+Position , animation, transform, transtion
 
 
 
