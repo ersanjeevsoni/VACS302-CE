@@ -55,6 +55,20 @@ Bootstrap
 2/12/24
 Bootstrap
 
+3/12/24
+BS
+
+9/12/24
+JS intro , Variable, Var declaration, Scope, Console and window
+
+10/12/24
+Variable Data Types: primitive and object
+
+16/12/24
+Object, function and array
+conditional statement
+
+
 
 
 
