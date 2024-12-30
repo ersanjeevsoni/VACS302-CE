@@ -68,6 +68,12 @@ Variable Data Types: primitive and object
 Object, function and array
 conditional statement
 
+17/12/24
+loops in Js
+
+
+30/12/24
+operators
 
 
 

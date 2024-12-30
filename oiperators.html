@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        var num1=5;
+        var num2=10;
+        // airthmetic operators
+
+        console.log(num1+num2);
+        console.log(num1-num2);
+        console.log(num1*num2);
+        console.log(num1/num2);
+        console.log(num1%num2);
+
+        //assignment operators
+        console.log(num1+=num2); // 15
+        console.log(num1-=num2); // num1=num1-num2 15-10 // 
+        console.log(num1*=num2);  //? num1=50
+
+        //comparision operators == , > , < , >=, <=, ===
+
+        if(num1>=num2){
+            console.log("true");
+        }
+        else{
+            console.log("false");
+            
+        }
+
+           // diffrence between == and ===
+         let a=5;
+         let b="5";
+        if(a===b){
+            console.log("valid number");
+        }
+        else{
+            console.log("invalid  number");
+            
+        }
+        // ternary operator
+
+        console.log((a>=b) ? "true number" :"false number");
+        
+
+        //logical operators || , &&, !
+
+        let subj1=40;
+        let subj2=50;
+        let subj3=45;
+
+        if(subj1==subj2 && subj2>subj3){
+            console.log("valid statement");
+            
+        }
+        else{
+            console.log("invalid statement");
+            
+        }
+ 
+
+
+        
+        
+        
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+        // use function keyword to declare the function
+        function msg() {
+            console.log("Hello JS"); // fn statement
+            console.log(typeof (msg));
+        }
+        msg(); // fn calling 
+
+        let msg1 = function () {
+            console.log("HELLO JS");
+            console.log(typeof (msg1));
+        }
+        msg1();
+
+        // function with parameters
+
+        function mul(num1, num2) {
+            console.log(num1 * num2);
+        }
+        mul(5, 7);
+
+        // function with return
+
+        function add(x, y) {
+            return console.log(x + y);
+        }
+        add(10, 40)
+
+        let add1 = cal(10, 50);
+        function cal(p, s) {
+            r = p + s;
+            return r;
+        }
+        console.log(r);
+
+        // return keyword
+        const square = function (number) {
+        return number * number;
+        };
+        const x = square(4); // x gets the value 16
+        console.log(x);
+
+        // basic function
+
+        let age=function(person){
+            console.log((person>=18 ? "valid age" : "invalid age"));  
+        }
+        age(20);
+
+        // above function using arrow function
+
+        let age1=(person)=>{
+            console.log((person>=18 ? "valid age" : "invalid age")); 
+        }
+      
+    </script>
+    <button onclick=age1(13)>Click on me!</button>
+</body>
+
+</html> 
