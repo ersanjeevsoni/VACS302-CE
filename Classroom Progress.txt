@@ -71,7 +71,6 @@ conditional statement
 17/12/24
 loops in Js
 
-
 30/12/24
 operators
 
