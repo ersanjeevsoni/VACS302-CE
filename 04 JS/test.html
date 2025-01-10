@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Test</title>
+</head>
+<body>
+    <script>
+        //Sequence of Even Numbers for the given array
+   /*      let num=[2,3,45,56,53,45,36,38,1,32,4,3,45, 44,35,36,47,48,20,24,26,28];
+
+        for(x of num){
+            if(x%2==0){
+                console.log(x); 
+            }
+        } */
+
+        // to check even or odd
+/*         var numbers = [1, 4, 44, 64, 55, 24, 32, 55, 19, 17, 74, 22, 23];
+
+for (let i in numbers) {
+   
+    if (numbers[i] % 2 === 0) { 
+        console.log(`${numbers[i]} is even`);
+    } else {
+        console.log(`${numbers[i]} is odd`);
+    }
+} */
+
+// sum of natural number
+
+/*  let num=parseInt(prompt("Enter the number"));
+ let sum=0;
+ for(let i=1; i<=num;i++){
+    sum+= i; 
+ }
+     console.log(`sum of ${num} natural number is : ${sum}`);
+ */
+     //display name of student in the given array
+    /*  var studentList=['x','y','z','xy','xyz','yz','zx', 'zxy']; 
+     for(x of studentList){
+        console.log(x); 
+     } */
+
+     //Display sum/sub/div/mod for the given numbers in an array.
+    // let num = [2, 3, 45, 56, 53, 45, 36, 38, 1, 32, 4, 3, 45];
+
+function operator() {
+   /*  let op = prompt("Enter the Operator (+, -, *, /):");
+    let result; */
+
+    // Initialize result based on the operator
+ /*    if (op === "+" || op === "-") {
+        result = 0; // Addition and subtraction start at 0
+    } else if (op === "*" || op === "/") {
+        result = 1; // Multiplication and division start at 1
+    } else {
+        console.log("Invalid operator! Please enter +, -, *, or /.");
+        return;
+    } */
+   // result=1; //need to change result value 0 or 1 in case of not returning but it is not appropriate so use above code
+/*     
+    for (let i of num) {
+        if (op === "+") {
+            result += i;
+        } else if (op === "-") {
+            result -= i;
+        } else if (op === "*") {
+            result *= i;
+        } else if (op === "/") {
+            result /= i;
+        }
+}
+console.log(`The result of applying '${op}' to the array is: ${result}`); */
+
+//find the max and min number compare to average of the array for the given array.
+let num = [2, 3, 45, 56, 53, 45, 36, 38, 10, 32, 4, 3, 45];
+
+// Calculate sum and average
+let sum = 0;
+for (let x of num) {
+    sum += x;
+}
+let avg = sum / num.length;
+
+console.log("Average of array is: " + avg);
+
+// Compare each number with the average
+for (let x of num) {
+    if (x > avg) {
+        console.log(`${x} is above the average`);
+    } else if (x < avg) {
+        console.log(`${x} is below the average`);
+    } else {
+        console.log(`${x} is equal to the average`);
+    }
+}
+
+// find only max and min in the given array using Math object
+
+let max = Math.max(...num);
+let min = Math.min(...num);
+
+console.log("Maximum value is " + max);
+console.log("Minimum value is " + min);
+
+//find max and min as compare to average
+
+//Use -Infinity for maxAboveAvg to ensure that any number greater than the average will replace it.
+//Use Infinity for minBelowAvg to ensure that any number less than the average will replace it.
+
+// Initialize max and min relative to average
+let maxAboveAvg = -Infinity;
+let minBelowAvg= Infinity;
+
+// Find max above average and min below average
+for (let x of num) {
+    if (x > avg && x > maxAboveAvg) {
+        maxAboveAvg = x;
+    }
+    if (x < avg && x < minBelowAvg) {
+        minBelowAvg = x;
+    }
+}
+
+// Display results
+console.log("Maximum value above average is: " + maxAboveAvg);
+console.log("Minimum value below average is: " + minBelowAvg);
+
+
+}
+
+operator();
+
+    </script>
+</body>
+</html>
