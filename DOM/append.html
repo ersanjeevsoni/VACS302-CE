@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create & Append in DOM</title>
+</head>
+<body>
+    <script>
+        //create element
+
+        let elementHeading=document.createElement("h1");
+
+        //get element
+
+        let bodyTag=document.getElementsByTagName("body");
+
+        // add element in the reference of body
+
+        bodyTag[0].append(elementHeading);
+        elementHeading.innerHTML="Hello JS";
+
+        // create image element
+        let imgTag=document.createElement("img");
+        bodyTag[0].append(imgTag);
+        imgTag.setAttribute("title","img created");
+        imgTag.setAttribute("src","../02 CSS/images/html_img.png")
+
+    </script>
+</body>
+</html>
