@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create & Append in DOM</title>
+    <style>
+        .myStyle{
+            color: aqua;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .myStyle2{
+            margin-top:30px;
+        }
+    </style>
 </head>
 <body>
     <script>
@@ -19,6 +29,11 @@
 
         bodyTag[0].append(elementHeading);
         elementHeading.innerHTML="Hello JS";
+
+        // add style or class or multiple classes to heading element using DOMToken
+        elementHeading.classList.add("myStyle", "myStyle2");
+        
+
 
         // create image element
         let imgTag=document.createElement("img");

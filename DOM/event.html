@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        #txt{
+            border: 2px solid #111d9c;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo">Hello Script!</h1>
+    <input type="text" placeholder="Enter your name" id="txt" 
+     onkeypress="formEvent()"/>
+    <button id="btn" onclick="clikEvent()">Click on me</button>
+    <script>
+        function clikEvent(){
+         let element=document.getElementById("demo");
+         element.style.color="red";
+        }
+
+        let inputElement=document.getElementById("btn");
+        inputElement.addEventListener("mouseover", mouseEvent);
+        inputElement.addEventListener("mouseout", mouseEvent2);
+
+
+        function mouseEvent(){
+            // let bttn=document.getElementById("btn");
+            inputElement.style.background="yellow";
+        }
+        function mouseEvent2(){
+            // let bttn=document.getElementById("btn");
+            inputElement.style.background="red";
+
+ 
+        }
+        // form event
+
+        function formEvent(){
+            let formElement=document.getElementById("txt");
+            formElement.style.borderColor="red";
+            formElement.style.backgroundColor="yellow"
+        }
+
+    </script>
+</body>
+</html>
